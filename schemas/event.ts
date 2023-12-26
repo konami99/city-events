@@ -27,7 +27,7 @@ export default defineType({
     }),
     defineField({
       name: 'mainImage',
-      title: 'Main image',
+      title: 'Main Image',
       type: 'image',
       options: {
         hotspot: true,
@@ -40,14 +40,29 @@ export default defineType({
       of: [{type: 'reference', to: {type: 'category'}}],
     }),
     defineField({
-      name: 'publishedAt',
-      title: 'Published at',
+      name: 'startDate',
+      title: 'Start Date',
       type: 'datetime',
     }),
     defineField({
-      name: 'body',
-      title: 'Body',
+      name: 'endDate',
+      title: 'End Date',
+      type: 'datetime',
+    }),
+    defineField({
+      name: 'shortDescription',
+      title: 'Short Description',
+      type: 'string',
+    }),
+    defineField({
+      name: 'description',
+      title: 'Description',
       type: 'blockContent',
+    }),
+    defineField({
+      name: 'eventOrganiser',
+      title: 'Event Organiser',
+      type: 'string',
     }),
   ],
 
