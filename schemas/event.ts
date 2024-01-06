@@ -50,6 +50,25 @@ export default defineType({
       type: 'datetime',
     }),
     defineField({
+      name: 'status',
+      title: 'Status',
+      type: 'string',
+      initialValue: 'draft',
+      options: {
+        list: [
+          { title: 'Draft', value: 'draft' },
+          { title: 'Pending', value: 'pending' },
+          { title: 'Approved', value: 'approved' },
+        ],
+        layout: 'radio'
+      }
+    }),
+    defineField({
+      name: 'pick',
+      title: 'Pick',
+      type: 'boolean',
+    }),
+    defineField({
       name: 'shortDescription',
       title: 'Short Description',
       type: 'string',
