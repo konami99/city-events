@@ -40,12 +40,6 @@ export default defineType({
       of: [{type: 'reference', to: {type: 'category'}}],
     }),
     defineField({
-      name: 'programs',
-      title: 'Programs',
-      type: 'array',
-      of: [{type: 'reference', to: {type: 'program'}}],
-    }),
-    defineField({
       name: 'startDate',
       title: 'Start Date',
       type: 'datetime',
