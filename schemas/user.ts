@@ -20,6 +20,11 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'email',
+      title: 'Email',
+      type: 'string',
+    }),
+    defineField({
       name: 'image',
       title: 'Image',
       type: 'image',
